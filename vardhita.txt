@@ -1,0 +1,69 @@
+{"_id":60000007,"name":"Janani","regMob":"+919884088715","adharNo":789012263594,"mail":"kumarakrishnanjanani@gmail.com","noOfTimes":0,"dob":{"date":"1997-11-07","kyc":{"file":"","status":"Approved"}},"pan":{"number":"ABTUN40096A","kyc":{"file":"doc.png","status":"pending"}},"password":{"old1":"Janani@2103","old2":"Janani@0000","cur":"Janani@1962"},"address":{"street":"E4,SBI quarters,Race course","city":"Coimbatore","state":"Tamil Nadu","pinCode":"641004","country":"India","kyc":{"file":"","status":"Approved"}},"alerts":[{"id":100,"subject":"Trans ID:2084","firstLine":"Hi, Janani. This is to","read":true,"content":"Hi, Janani. This mail has been sent because you have requested for PAN number change. The procees is ongoing. You will be notified soon.","time":"Wed Apr 4 2018 15:45:32","attachmentName":""},{"id":101,"subject":"Trans ID:2933","firstLine":"Hi, Janani.","read":true,"content":"Hi, Ashwin. This mail has been sent because you have transacted 1500 rs. The procees is ongoing. You will be notified soon.","time":"Wed Apr 4 2018 16:48:32","attachmentName":""}],"accounts":{"savings":[
+    {
+        "accountNo":12341256123567,
+        "branch":"Sai baba colony",
+        "city":"Coimbatore",
+        "minBal":10000,
+        "balance":21000,
+                "transanctionHistory":
+        [
+            
+            {
+                "Date":"2018-04-06(2018-04-06)",
+                "Narration":"UPI-12345678901234",
+                "Withdrawal":"300",
+                "Deposit":"",
+                "Closing Balance":"11636"
+            },
+            {
+                "Date":"2018-04-06(2018-04-06)",
+                "Narration":"UPI-12306745891234",
+                "Withdrawal":"500",
+                "Deposit":"",
+                "Closing Balance":"11136"
+            },
+            {
+                "Date":"2018-04-06(2018-04-06)",
+                "Narration":"UPI-15678923401234",
+                "Withdrawal":"300",
+                "Deposit":"",
+                "Closing Balance":"10836"
+            },
+            {
+                "Date":"2018-04-07(2018-04-07)",
+                "Narration":"UPI-15634078921234",
+                "Withdrawal":"",
+                "Deposit":"1000",
+                "Closing Balance":"11836"
+            },
+            {
+                "Date":"2018-04-07(2018-04-07)",
+                "Narration":"UPI-15892126340734",
+                "Withdrawal":"",
+                "Deposit":"1500",
+                "Closing Balance":"13336"
+            },
+            {
+                "Date":"2018-04-07(2018-04-07)",
+                "Narration":"UPI-15678923401234",
+                "Withdrawal":"1000",
+                "Deposit":"",
+                "Closing Balance":"12336"
+            },
+            {
+                "Date":"2018-04-07(2018-04-07)",
+                "Narration":"UPI-15634078921234",
+                "Withdrawal":"500",
+                "Deposit":"",
+                "Closing Balance":"12336"
+            },
+            {
+                "Date":"2018-04-07(2018-04-07)",
+                "Narration":"UPI-15634078921234",
+                "Withdrawal":"300",
+                "Deposit":"",
+                "Closing Balance":"12036"
+            }
+        ]
+    }
+    ],"homeLoan":[{"accountNo":17265678978906,"amount":280000,"tenure":3.5,"emi":7900,"status":"Active","loanDate":"2018-01-26"}],"creditCard":[{"cardNo":5354320109123456,"name":"Janani","cvv":714,"expiryDate":"2025-09","unbilledCredit":1500,"branch":"Sai Baba Colony","city":"Coimbatore","rewardPoints":650,"type":"Silver","maxCredit":10000}]},"blockedAccounts":[]}

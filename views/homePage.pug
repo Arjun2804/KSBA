@@ -1,0 +1,458 @@
+doctype html
+html(lang='zxx')
+  head
+    title KSBA BANKING 
+    // Meta tag Keywords
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='KSBA Banking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    script.
+      function validate()
+      {
+      var pass = document.myform.psw.value;
+      var pp = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+      if(!pp.test(pass) || pass.length < 6)
+      {
+      alert("Please Enter a Valid Password ");
+      return false;
+      }
+      }
+    // // Meta tag Keywords
+    // css files
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    // Bootstrap-Core-CSS
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // Style-CSS
+    link(rel='stylesheet', href='css/font-awesome.css')
+    // Font-Awesome-Icons-CSS
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='all')
+    // Banner-Slider-CSS
+    // //css files
+    link(rel='stylesheet', type='text/css', href='css/demo.css')
+    link(rel='stylesheet', type='text/css', href='css/form.css')
+    // online-fonts
+    link(href='//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin-ext', rel='stylesheet')
+    link(href='//fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext', rel='stylesheet')
+    // //online-fonts
+  body
+    // navigation
+    .nav-links
+      .header-w3l
+        .container
+          a.navbar-brand(href='/')
+            h1
+              span KSBA
+              |  Banking
+          .call-w3l
+            img(src='images/rsz_call.png')
+          .clearfix
+      nav.navbar.navbar-inverse
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #myNavbar.collapse.navbar-collapse
+          .w3l-nav
+            ul.nav.navbar-nav.link-effect
+              li.active
+                a(href='/') Home
+              li
+                a.scroll(href='#about') About Us
+              li
+                a.scroll(href='#services') Our Services
+              li
+                a.scroll(href='#team') Team
+              li
+                a.scroll(href='#gallery') Gallery
+              li
+                a.scroll(href='#contact') Contact Us
+            a.w3l-cont(href='/login') Net Banking Login
+      .codecon_half
+        .expSearchBox
+      .clearfix
+    // //navigation
+    // banner section
+    .banner-slider
+      // //Slider
+    // Modal1
+    #myModal.modal.fade(tabindex='-1', role='dialog')
+      .modal-dialog
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal') ×
+            img.img-responsive(src='images/g7.jpg', alt=' ')
+            h5 Donec lobortis pharetra dolor
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable..
+        // //Modal content
+    // //Modal1
+    // //banner section
+    // about
+    #about.about
+      .container
+        h3.w3l-title
+          span About
+          |  Us
+        .w3-agileits-about-grids
+          .col-md-5.agile-about-right
+            img(src='images/3.png', alt='')
+          .col-md-7.agile-about-left
+            h3.w3l-sub Offering the most 
+            p.sub-p Competitive rates and fees
+            p.sub-p2 KSBA Bank provides you with the latest Technology
+            p.sub-p3 KSBA Bank is committed to provide a Superior Banking Experience.
+          .clearfix  
+    // //about
+    // wthree-slid
+    .wthree-slid
+      .col-sm-6.col-xs-8.wthree-slid-right
+        h4 The best way to save your time and money
+        p
+          | Express bank will save your time, money and improve the way you manage your business finances. You will have the control you need, with multiple disbursement and payment options, along with many other cash management features to help you optimize your business cash flow
+        a.w3l-cont.scroll(href='#contact') Contact Us
+      .col-sm-6.col-xs-4.wthree-slid-left
+      .clearfix  
+    // wthree-slid
+    // services
+    #services.services
+      .container
+        h3.w3l-title
+          span Our
+          |  Services
+        .col-md-4.services-grids-1
+        .col-md-4.services-grids
+          .wthree-services-grid
+            .wthree-services-icon
+              i.fa.fa-money(aria-hidden='true')
+            .wthree-services-info
+              h5 Free Online 
+              p No Cost or Obligation 
+          .wthree-services-grid.w3l-agile
+            .wthree-services-icon
+              i.fa.fa-user(aria-hidden='true')
+            .wthree-services-info
+              h5 Accept All Major
+              p Banking All over the world 
+          .wthree-services-grid
+            .wthree-services-icon
+              i.fa.fa-car(aria-hidden='true')
+            .wthree-services-info
+              h5 Sales & Trading
+              p The key Function of an Investment Bank. 
+        .col-md-4.services-grids.w3l-seco
+          .wthree-services-grid
+            .wthree-services-icon
+              i.fa.fa-cog(aria-hidden='true')
+            .wthree-services-info
+              h5 Fast Setup
+              p A new payment platform allowing instant payment. 
+          .wthree-services-grid.w3l-agile
+            .wthree-services-icon
+              i.fa.fa-signal(aria-hidden='true')
+            .wthree-services-info
+              h5 Financial Advisors
+              p A 24/7 Companion! 
+          .wthree-services-grid
+            .wthree-services-icon
+              i.fa.fa-credit-card(aria-hidden='true')
+            .wthree-services-info
+              h5 Tax Consulting
+              p Ready to Redeem! 
+        .clearfix  
+    // //services
+    // stats
+    div(data-vide-bg='video/coins')
+      #stats.stats.center-container
+        .container
+          .stats-info
+            .col-md-4.col-xs-4.stats-grid.slideanim
+              i.fa.fa-user-o(aria-hidden='true')
+              .agile-one
+                h4.stats-info Employees
+                .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='1000000000', data-delay='2', data-increment='3') 12760
+            .col-md-4.col-xs-4.stats-grid.slideanim
+              i.fa.fa-globe(aria-hidden='true')
+              .agile-one
+                h4.stats-info Locations
+                .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='1276012760', data-delay='3', data-increment='1') 12760
+            .col-md-4.col-xs-4.stats-grid.slideanim
+              i.fa.fa-diamond(aria-hidden='true')
+              .agile-one
+                h4.stats-info Awards Winning
+                .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='12760000000', data-delay='1', data-increment='2') 12760
+            .clearfix
+    // //stats
+    // team
+    #team.team.agileits
+      .team-agileinfo
+        .container
+          h3.w3l-title
+            span Our
+            |  Team
+          .team-row.agileits-w3layouts
+            .col-md-3.col-xs-6.team-grids
+              .team-agileimg
+                img.img-responsive(src='images/IMG_20170721_122819.jpg', alt='')
+                .captn
+                  .captn-top
+                    h4 Krishna Prasath 
+                    p Scrum Master
+                  .social-w3lsicon.agileinfo-social-grids
+            .col-md-3.col-xs-6.team-grids
+              .team-agileimg
+                img.img-responsive(src='images/IMG-20180221-WA0000.jpg', alt='')
+                .captn
+                  .captn-top
+                    h4 Shriti Agarwal
+                    p FrontEnd Developer
+                  .social-w3lsicon.agileinfo-social-grids
+            .col-md-3.col-xs-6.team-grids
+              .team-agileimg
+                img.img-responsive(src='images/IMG-20180220-WA0021.jpg', alt='')
+                .captn
+                  .captn-top
+                    h4 Arjun Ramesh
+                    p BackEnd Developer
+                  .social-w3lsicon.agileinfo-social-grids
+            .col-md-3.col-xs-6.team-grids
+              .team-agileimg
+                img.img-responsive(src='images/20180221_001004.png', alt='')
+                .captn
+                  .captn-top
+                    h4 Ashwin
+                    p FrontEnd Developer
+                  .social-w3lsicon.agileinfo-social-grids
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            .col-md-3.col-xs-6.team-grids
+              .team-agileimg
+                img.img-responsive(src='images/20180221_001600.jpg', alt='')
+                .captn
+                  .captn-top
+                    h4 Bala Athithan
+                    p FrontEnd Developer
+                  .social-w3lsicon.agileinfo-social-grids
+            .clearfix  
+    // //team
+    // testimonials
+    .testimonials
+    // //testimonials
+    // /gallery
+    #gallery.gallery
+      .container
+        h3.w3l-title
+          span Our
+          |  Gallery
+        .agile_gallery_grids.w3-agile
+          ul.clearfix.demo
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g1.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p A Smarter Inversment
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g2.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Easy Access
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g3.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Money Exchange
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g4.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p 24/7
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g5.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Easy Money
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g6.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Savings
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g7.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Future Savings
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g8.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Digital Money
+            li
+              .gallery-grid1
+                img.img-responsive(src='images/g9.jpg', alt=' ')
+                .p-mask
+                  h4
+                    span KSBA
+                    |  Banking
+                  p Trusted Investment
+    // //gallery
+    // mail
+    #contact.mail
+      .container
+        h3.w3l-title
+          span Contact
+          |  Us
+        .mail-w3l-agile
+          .col-md-6.col-sm-6.contact-left-w3ls
+            .w3l-cont-mk
+              img(src='images/img2.jpg')
+            h3 Contact Info
+            .visit
+              .col-md-2.col-sm-2.col-xs-2.contact-icon-wthree
+                i.fa.fa-home(aria-hidden='true')
+              .col-md-10.col-sm-10.col-xs-10.contact-text-agileinf0
+                h4 Visit us
+                p Amrita School Of Engineering,Coimbatore
+              .clearfix
+            .mail-w3
+              .col-md-2.col-sm-2.col-xs-2.contact-icon-wthree
+                i.fa.fa-envelope-o(aria-hidden='true')
+              .col-md-10.col-sm-10.col-xs-10.contact-text-agileinf0
+                h4 Mail us
+                p
+                  a(href='mailto:info@example.com') ragavrao1998@gmail.com
+              .clearfix
+            .call
+              .col-md-2.col-sm-2.col-xs-2.contact-icon-wthree
+                i.fa.fa-phone(aria-hidden='true')
+              .col-md-10.col-sm-10.col-xs-10.contact-text-agileinf0
+                h4 Call us
+                p 9994797583
+              .clearfix
+          .clearfix  
+    // //mail
+    // footer
+    .footer-bot
+      .container
+        .logo2
+          h2
+            a(href='/')
+              span KSBA
+              |  Banking
+        .clearfix
+    .copy-right
+      .agileinfo_social_icons
+      .container
+        p
+          | © 2018 Online Banking. All Rights Reserved | Design by  
+          a(href='/')  KSBA Group
+    // //footer
+    // js files
+    // js
+    script(type='text/javascript', src='js/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    // Necessary-JavaScript-File-For-Bootstrap
+    // //js
+    // js for banner
+    // responsiveslider
+    script(src='js/responsiveslides.min.js')
+    script.
+      // You can also use "$(window).load(function() {"
+      $(function () {
+      // Slideshow 4
+      $("#slider3").responsiveSlides({
+      auto: true,
+      pager:true,
+      nav:false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+      $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+      $('.events').append("<li>after event fired.</li>");
+      }
+      });
+      });
+    // //responsiveslider
+    // stats
+    script(type='text/javascript', src='js/numscroller-1.0.js')
+    // //stats
+    // /js for banner
+    // start-smoth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smoth-scrolling
+    // smooth scrolling
+    script(src='js/SmoothScroll.min.js')
+    // //smooth scrolling
+    // smooth-scrolling-of-move-up
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    // //smooth-scrolling-of-move-up
+    // video-js
+    script(src='js/jquery.vide.min.js')
+    // //video-js
+    // gallery-js
+    script(src='js/jquery.picEyes.js')
+    script.
+      $(function(){
+      //picturesEyes($('.demo li'));
+      $('.demo li').picEyes();
+      });
+    // //gallery-js
+    // //js files

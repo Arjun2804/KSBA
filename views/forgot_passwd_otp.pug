@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+  body
+    form
+      input#verificationcode(type='text', placeholder='Enter OTP')
+      br
+      br
+      input(type='button', value='Submit', onclick='myFunction()')
+      br
+      br
+    #recaptcha-container
+    p
+    h3
+      | Disclaimer:
+    |       Please Click I'm not a robot to get OTP 
+    p
+    script(src='https://www.gstatic.com/firebasejs/4.8.1/firebase.js')
+    script.
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyAL8dSTuXb92DWu0l78dtV4m4fC8psKeV4",
+      authDomain: "groupinger-users.firebaseapp.com",
+      databaseURL: "https://groupinger-users.firebaseio.com",
+      projectId: "groupinger-users",
+      storageBucket: "groupinger-users.appspot.com",
+      messagingSenderId: "432661298034"
+      };
+      firebase.initializeApp(config);
+    script(type='text/javascript').
+      window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+      firebase.auth().signInWithPhoneNumber("+"+#{Mobile}, window.recaptchaVerifier)
+      .then(function(confirmationResult) {
+      window.confirmationResult = confirmationResult;
+      a(confirmationResult);
+      });
+      var myFunction = function() {
+      window.confirmationResult.confirm(document.getElementById("verificationcode").value)
+      .then(function(result) {
+      window.location.href="/forgot_passwd_otp_correct";
+      }, function(error) {
+      alert(error);
+      window.location.href="/login_otp_wrong";
+      });
+      };

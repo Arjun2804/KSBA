@@ -1,0 +1,137 @@
+doctype html
+html(lang='zxx')
+  head
+    title KSBA BANKING 
+    // Meta tag Keywords
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='KSBA Banking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    // // Meta tag Keywords
+    // css files
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    // Bootstrap-Core-CSS
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // Style-CSS
+    link(rel='stylesheet', href='css/font-awesome.css')
+    // Font-Awesome-Icons-CSS
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='all')
+    // Banner-Slider-CSS
+    // //css files
+    link(rel='stylesheet', type='text/css', href='css/demo.css')
+    link(rel='stylesheet', type='text/css', href='css/form.css')
+    // online-fonts
+    link(href='//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin-ext', rel='stylesheet')
+    link(href='//fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext', rel='stylesheet')
+    // //online-fonts
+  script.
+    function validate()
+    {
+    var cre = document.myform.card.value;
+    var cv = document.myform.cvv.value;
+    var use=document.myform.cid.value;
+     if(/^\d{8}$/.test(use))
+    {
+    }
+    else
+    {
+    alert("Please Enter a Valid Customer ID ");
+    return false;
+    }
+    if(/^\d{16}$/.test(cre))
+    {
+    }
+    else
+    {
+    alert("Please Enter a Valid Card Number ");
+    return false;
+    }
+    if(/^\d{3}$/.test(cv))
+    {
+    }
+    else
+    {
+    alert("Please Enter a Valid CVV ");
+    return false;
+    }
+    }
+  body
+    // navigation
+    .nav-links
+      .header-w3l
+        .container
+          a.navbar-brand(href='/')
+            h1
+              span KSBA
+              |  Banking
+          .call-w3l
+            img(src='images/rsz_call.png')
+          .clearfix
+      .codecon_half
+        .expSearchBox
+      .clearfix
+    // //navigation
+    // banner section
+    .banner-slider(<div='')
+      .container
+        form(action='/forgot_psw_cardform', ,class='sign-up', method='POST', name='myform', onsubmit='return validate()')
+          h1.sign-up-title Enter Your Customer ID
+          input.sign-up-input(type='text', name='cid', placeholder='Enter Your UserID', autofocus='', required='')
+          h1.sign-up-title Enter Card Details
+          input.sign-up-input(type='text', name='card', placeholder='Enter Card Number', autofocus='', required='')
+          h4 Expiry Date:
+          br
+          | 	Month
+          select(name='month')
+            option(value='01') 01
+            option(value='02') 02
+            option(value='03') 03
+            option(value='04') 04
+            option(value='05') 05
+            option(value='06') 06
+            option(value='07') 07
+            option(value='08') 08
+            option(value='09') 09
+            option(value='10') 10
+            option(value='11') 11
+            option(value='12') 12
+          | 						  Year
+          select(name='year')
+            option(value='2018') 2018
+            option(value='2019') 2019
+            option(value='2020') 2020
+            option(value='2021') 2021
+            option(value='2022') 2022
+            option(value='2023') 2023
+            option(value='2024') 2024
+            option(value='2025') 2025
+            option(value='2026') 2026
+            option(value='2027') 2027
+            option(value='2028') 2028
+            option(value='2029') 2029
+            option(value='2030') 2030
+            option(value='2031') 2031
+            option(value='2032') 2032
+            option(value='2033') 2033
+            option(value='2034') 2034
+            option(value='2035') 2035
+            option(value='2036') 2036
+            option(value='2037') 2037
+            option(value='2038') 2038
+            option(value='2039') 2039
+            option(value='2040') 2040
+          br
+          br
+          input.sign-up-input(type='password', name='cvv', placeholder='Enter CVV ', autofocus='', required='')
+          br
+          input.sign-up-button(type='submit', value='NEXT')
+          br
+          br
+          h1 Disclaimer:
+          |  Non-Card users please visit KSBA Bank.
+        .callbacks_container
+          ul#slider3.rslides
+            li
+      // //Slider

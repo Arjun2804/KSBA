@@ -1,0 +1,93 @@
+doctype html
+html(lang='zxx')
+  head
+    title KSBA BANKING 
+    // Meta tag Keywords
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='KSBA Banking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    // // Meta tag Keywords
+    // css files
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    // Bootstrap-Core-CSS
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // Style-CSS
+    link(rel='stylesheet', href='css/font-awesome.css')
+    // Font-Awesome-Icons-CSS
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='all')
+    // Banner-Slider-CSS
+    // //css files
+    link(rel='stylesheet', type='text/css', href='css/demo.css')
+    link(rel='stylesheet', type='text/css', href='css/form.css')
+    // online-fonts
+    link(href='//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin-ext', rel='stylesheet')
+    link(href='//fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext', rel='stylesheet')
+    // //online-fonts
+    script.
+      function validate()
+      {
+      var pass = document.myform.psw.value;
+      var mob = document.myform.mno.value;
+      var pp = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+      var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+      if(!pp.test(pass) || pass.length < 6)
+      {
+      alert("Please Enter a Valid Password ");
+      return false;
+      }
+      if(mob.length != 10)
+      {
+      alert("Please Enter a Valid Mobile Number ");
+      return false;
+      }
+      if(mob.match(phoneno))
+      {
+      return true;
+      }
+      else
+      {
+      alert("Please Enter a Valid Mobile Number ");
+      return false;
+      }
+      }
+  body
+    // navigation
+    .nav-links
+      .header-w3l
+        .container
+          a.navbar-brand(href='/')
+            h1
+              span KSBA
+              |  Banking 
+          .call-w3l
+            img(src='images/rsz_call.png')
+          .clearfix
+      .codecon_half
+        .expSearchBox
+      .clearfix
+    // //navigation
+    // banner section
+    .banner-slider
+      .container
+        form.sign-up(action='/login_submit1', method='POST', name='myform', onsubmit='return validate()')
+          h1.sign-up-title LOGIN #{msg}
+          input.sign-up-input(type='text', name='username', placeholder='User ID', autofocus='', required='')
+          br
+          input.sign-up-input(type='password', name='psw', placeholder='Password', autofocus='', required='')
+          br
+          input.sign-up-input(type='text', name='mno', placeholder='10-digit registered mobile number ', autofocus='', required='')
+          br
+          br
+          input.sign-up-button(type='submit', value='LOGIN')
+          br
+          br
+          a(href='/login_frgtusr')  Forget user ID? 
+          br
+          a(href='/login_frgtpass')  Forget password? 
+        .callbacks_container
+          ul#slider3.rslides
+            li
+      // //Slider
